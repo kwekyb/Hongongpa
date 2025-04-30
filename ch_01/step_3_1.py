@@ -22,7 +22,7 @@ def dump_plot_data():
 
 
 def load_plot_data() -> dict[str, list]:
-    if OUT_3_1.is_file():
+    if OUT_3_1.is_file(): # 해당 경로에 파일이 존재할 경우
         with open(OUT_3_1, encoding="utf-8") as fp:
             return json.load(fp)
     return {}

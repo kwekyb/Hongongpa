@@ -3,8 +3,7 @@ from pathlib import Path
 
 from step_2_1 import OUT_DIR  # 이전에 작성한 모듈을 불러옵니다.
 
-OUT_2_3 = OUT_DIR / f"{Path(__file__).stem}.json"
-
+OUT_2_3 = OUT_DIR / f"{Path(__file__).stem}.json" # output/step_2_3.json
 
 def dump_dirnames(base_dir: Path) -> None:
     dirs = []
@@ -26,3 +25,4 @@ def load_dirnames() -> list[str]:
 
 if __name__ == "__main__":
     dump_dirnames(Path.home())
+    print(Path.home())
