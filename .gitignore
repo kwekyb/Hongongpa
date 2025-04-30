@@ -4,4 +4,4 @@ node_modules/
 *.env
 .venv
 __pycache__
-ECHO가 설정되어 있습니다.
+
